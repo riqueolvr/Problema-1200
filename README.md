@@ -4,13 +4,13 @@
 
 
 
-class Node:
+    class Node:
     def __init__(self, key):
         self.key = key
         self.left = None
         self.right = None
 
-class BST:
+    class BST:
     def __init__(self):
         self.root = None
 
@@ -58,10 +58,10 @@ class BST:
             result.append(node.key)
 
 
-import sys
-bst = BST()
+    import sys
+    bst = BST()
 
-for line in sys.stdin:
+    for line in sys.stdin:
     parts = line.strip().split()
     if not parts:
         continue
